@@ -2,11 +2,12 @@
 
 
 {% block content %}
+<br>
 <h2> Question list here : </h2>
 <ol>
     {% for question in questions %}
       <li>
-          <a href="{% url 'question_detil' question.id %}">{{ question.text }}</a>
+          <a href="{% url 'question_detil' question.id %}"><h3>{{ question.text }}</h3></a>
       </li>
     {% endfor %}
 
